@@ -6,7 +6,7 @@ This is a list of examples developed in Ruby about the classes of the [Gosu](htt
 
 ## Install dependencies
 
-Here are the pre-requisites to play this game (or be able to use Gosu):
+Here are the pre-requisites to play this examples (or be able to use Gosu):
 
 * Mac OS X: [Getting Started on OS X](https://github.com/gosu/gosu/wiki/Getting-Started-on-OS-X#prerequisites)
 * Linux: [Getting Started on Linux](https://github.com/gosu/gosu/wiki/Getting-Started-on-Linux#getting-started-on-linux)
