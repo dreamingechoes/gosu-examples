@@ -1,24 +1,21 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'gosu'
 
 class Window < Gosu::Window
-
   def initialize
     super 970, 545
-    self.caption = "Keyboard Example"
-    @x = 200
 
-    self.show
+    self.caption = 'Keyboard Example'
+
+    @background = Gosu::Image.new("#{__dir__}/images/background.png")
+    @mario = Gosu::Image.new("#{__dir__}/images/mario.png")
+    @x = 200
   end
 
   def draw
-    background = Gosu::Image.new('background.png')
-    background.draw(0,0,0)
-
-    mario = Gosu::Image.new('mario.png')
-    mario.draw(@x, 420, 1)
+    @background.draw(0, 0, 0)
+    @mario.draw(@x, 420, 1)
   end
 
   def button_down(id)
@@ -28,7 +25,6 @@ class Window < Gosu::Window
       @x += 10
     end
   end
-
 end
 
-w = Window.new()
+Window.new.show

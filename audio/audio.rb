@@ -1,25 +1,23 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'gosu'
 
 class Window < Gosu::Window
 
   def initialize
-    super 496, 434
+    super 800, 445
+
     self.caption = "Audio Example"
 
-    tune = Gosu::Song.new(self, 'tune.mp3')
+    tune = Gosu::Song.new("#{__dir__}/sounds/tune.mp3")
     tune.play(true)
 
-    self.show
+    @background = Gosu::Image.new("#{__dir__}/images/scene.jpeg")
   end
 
   def draw
-    background = Gosu::Image.new('scene.gif')
-    background.draw(0,0,0)
+    @background.draw(0, 0, 0)
   end
-
 end
 
-w = Window.new()
+Window.new.show

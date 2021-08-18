@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'gosu'
 
 class Star
@@ -23,16 +22,13 @@ class Star
 end
 
 class Window < Gosu::Window
-
   def initialize
     super 640, 480
     self.caption = "Animation Example"
 
-    @background_image = Gosu::Image.new("media/space.png", :tileable => true)
-
-    @star_anim = Gosu::Image.load_tiles("media/star.png", 25, 25)
+    @background_image = Gosu::Image.new("#{__dir__}/media/space.png", :tileable => true)
+    @star_anim = Gosu::Image.load_tiles("#{__dir__}/media/star.png", 25, 25)
     @stars = Array.new
-    self.show
   end
 
   def update
@@ -45,7 +41,6 @@ class Window < Gosu::Window
     @background_image.draw(0,0,0)
     @stars.each { |star| star.draw }
   end
-
 end
 
-w = Window.new()
+Window.new.show

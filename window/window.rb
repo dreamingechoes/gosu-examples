@@ -1,20 +1,16 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'gosu'
 
 class Window < Gosu::Window
-
   def initialize
-    super 496, 434
-    self.caption = "Window Example"
+    super 800, 600
 
-    self.show
+    self.caption = "Window Example"
   end
 
   def draw
   end
-
 end
 
-w = Window.new()
+Window.new.show
