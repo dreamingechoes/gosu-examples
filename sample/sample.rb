@@ -17,14 +17,14 @@ class Window < Gosu::Window
     @background.draw(0, 0, 0, 3, 3)
 
     font = Gosu::Font.new(self, 'hack', 20)
-    font.draw('Push Q to play note C', 280, 40, 3, 1, 1, Gosu::Color::WHITE)
-    font.draw('Push W to play note D', 280, 60, 3, 1, 1, Gosu::Color::WHITE)
-    font.draw('Push E to play note E', 280, 80, 3, 1, 1, Gosu::Color::WHITE)
-    font.draw('Push R to play note F', 280, 100, 3, 1, 1, Gosu::Color::WHITE)
-    font.draw('Push T to play note G', 280, 120, 3, 1, 1, Gosu::Color::WHITE)
-    font.draw('Push Y to play note A', 280, 140, 3, 1, 1, Gosu::Color::WHITE)
-    font.draw('Push U to play note B', 280, 160, 3, 1, 1, Gosu::Color::WHITE)
-    font.draw('Push I to play note C', 280, 180, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push Q to play note C', 280, 40, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push W to play note D', 280, 60, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push E to play note E', 280, 80, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push R to play note F', 280, 100, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push T to play note G', 280, 120, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push Y to play note A', 280, 140, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push U to play note B', 280, 160, 3, 1, 1, Gosu::Color::WHITE)
+    font.draw_text('Push I to play note C', 280, 180, 3, 1, 1, Gosu::Color::WHITE)
   end
 
   def button_down(id)
