@@ -14,8 +14,8 @@ class Window < Gosu::Window
   def draw
     @background.draw(0, 0, 0, 3, 3)
 
-    font = Gosu::Font.new(self, 'pixeladeregular', 44)
-    font.draw("↑ ↑ ↓ ↓ ← → ← → B A", 180, 280, 3, 1, 1, Gosu::Color::WHITE)
+    font = Gosu::Font.new(self, 'Zapfino', 44)
+    font.draw_text("↑ ↑ ↓ ↓ ← → ← → B A", 180, 280, 3, 1, 1, Gosu::Color::WHITE)
   end
 end
 
