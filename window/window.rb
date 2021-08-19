@@ -8,9 +8,6 @@ class Window < Gosu::Window
 
     self.caption = "Window Example"
   end
-
-  def draw
-  end
 end
 
 Window.new.show
